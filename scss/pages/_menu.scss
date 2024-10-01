@@ -1,0 +1,31 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.homeMenu {
+    &__wrapper {
+    @include evenGrid(2, 1rem);
+    justify-items: center;
+  }
+  .title {
+    padding-top: 5rem;
+    justify-content: center;
+    text-align: center;
+  }
+  h2{
+    letter-spacing: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 200;
+  }
+  .menu{
+    text-align: center;
+    gap: 2rem;
+  }
+
+  img {
+    display: flex;
+    height: 30rem;
+    width: 20rem;
+    border-radius: 2rem;
+    border: none;
+  }
+}

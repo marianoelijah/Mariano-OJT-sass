@@ -1,0 +1,33 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.ourChef {
+    &__wrapper {
+        @include evenGrid(4, 3rem);
+        //padding: 2rem 3rem;//
+        margin: 3rem;
+        gap: 2rem;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+        text-align: center;
+    }
+    .chefCards {
+        text-align: center;
+        padding: 2rem 3rem;
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    small{
+        font-size: 1rem;
+        color: $clr--secondary;
+        font-weight: 700;
+    }
+    img{
+        border-radius: 2rem;
+    }
+    }
+}
