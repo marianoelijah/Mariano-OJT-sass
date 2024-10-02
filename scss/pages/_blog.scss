@@ -1,0 +1,26 @@
+@use "../base/" as *;
+@use "../abstract/" as *;
+
+.ourBlog{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        @include centerAll;
+        place-content: center;
+    }
+    &__card{
+        padding: 2rem 1rem;
+    img {
+    display: flex;
+    height: 25%;
+    width: 30%;
+    border-radius: 5rem;
+    border: none;
+    padding: 2rem;
+    }
+    &--details p{
+    color: $clr--secondary;
+    }
+}
+}
+

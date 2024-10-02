@@ -7,7 +7,8 @@
     @include centerAll;
     flex-direction: column;
     @include mediaQuery(520px) {
-
+      place-content: center;
+      
     }
     h4 {
       color: $clr--secondary;
@@ -124,7 +125,7 @@
     background-color: transparent;
     border: 1px solid $clr--secondary;
   }
-  text-area {
+  &__text-area {
     @extend input;
     height: 10rem;
     margin-bottom: 3rem;

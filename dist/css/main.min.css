@@ -1020,7 +1020,8 @@ fieldset,
 form,
 label,
 input,
-.homeBooking text-area,
+.contacts__txtbs textarea,
+.homeBooking__text-area,
 textarea,
 legend,
 table,
@@ -1295,6 +1296,11 @@ img {
   text-align: center;
   flex-direction: column;
 }
+@media screen and (max-width: 520px) {
+  .homeBanner__wrapper {
+    place-content: center;
+  }
+}
 .homeBanner__wrapper h4 {
   color: #dd1d01;
   letter-spacing: 0.5rem;
@@ -1418,28 +1424,28 @@ img {
   border: 1px solid #fff;
   padding: 2rem;
 }
-.homeBooking input, .homeBooking text-area {
+.homeBooking input, .homeBooking .homeBooking__text-area {
   width: 98%;
   margin: 0.5rem;
   padding: 0.5rem;
   background-color: transparent;
   border: 1px solid #dd1d01;
 }
-.homeBooking text-area {
+.homeBooking__text-area {
   height: 10rem;
   margin-bottom: 3rem;
 }
-.homeBooking input::-moz-placeholder, .homeBooking text-area::-moz-placeholder {
+.homeBooking input::-moz-placeholder, .homeBooking .homeBooking__text-area::-moz-placeholder {
   font-family: "Patrick Hand", cursive;
   color: #fff;
 }
-.homeBooking input::placeholder, .homeBooking text-area::placeholder {
+.homeBooking input::placeholder, .homeBooking .homeBooking__text-area::placeholder {
   font-family: "Patrick Hand", cursive;
   color: #fff;
 }
-.homeBooking input:focus, .homeBooking text-area:focus,
+.homeBooking input:focus, .homeBooking .homeBooking__text-area:focus,
 .homeBooking input:enabled,
-.homeBooking text-area:enabled {
+.homeBooking .homeBooking__text-area:enabled {
   color: #fff;
 }
 .homeBooking__name {
@@ -1585,23 +1591,156 @@ img {
     grid-template-columns: 1fr;
   }
 }
-.soferProduct__title {
+.soferProduct .title {
+  display: flex;
+  justify-content: center;
   padding-top: 3rem;
+  text-align: center;
 }
-.soferProduct__card {
-  margin-bottom: 5rem;
+.soferProduct .card {
+  margin-top: 10%;
+  margin-bottom: 3rem;
   padding: 2rem 1rem;
   text-align: center;
   border: 2px solid transparent;
 }
-.soferProduct__card:hover {
+.soferProduct .card:hover {
   border: 2px solid #dd1d01;
   border-radius: 2rem;
 }
-.soferProduct__card img {
-  width: 17rem;
+.soferProduct .card img {
+  width: 20rem;
 }
-.soferProduct__card--details p {
+.soferProduct .card--details p {
+  color: #dd1d01;
+}
+.soferProduct .card__soferSearch {
+  padding: 2rem;
+  max-width: 3rem;
+}
+.soferProduct .card__table {
+  position: absolute;
+  padding: 1rem 2rem;
+  max-height: 50rem;
+  border-radius: 2rem;
+}
+.soferProduct .card h2 {
+  font-weight: 700;
+  font-style: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.soferProduct .card span {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  height: 1rem;
+  width: 8rem;
+}
+.soferProduct .card .list small {
+  gap: 5rem;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  place-content: center;
+  height: 150vh;
+}
+.contacts .title {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding: 2rem 1rem;
+}
+.contacts .title icon {
+  color: #dd1d01;
+  margin-bottom: 1rem;
+}
+.contacts__map {
+  margin: 2rem;
+}
+.contacts__map iframe {
+  border-radius: 2rem;
+}
+.contacts__txtbs {
+  padding: 5rem;
+  width: 70rem;
+  height: 50rem;
+}
+.contacts__txtbs ul {
+  flex-direction: column;
+}
+.contacts__txtbs h4 {
+  font-size: 2rem;
+}
+.contacts__txtbs form {
+  padding: 2rem;
+}
+.contacts__txtbs form .contacts__name {
+  display: flex;
+  justify-content: space-around;
+}
+.contacts__txtbs form .contacts__name ul {
+  width: 100%;
+}
+.contacts__txtbs form small {
+  display: flex;
+}
+.contacts__txtbs input, .contacts__txtbs textarea {
+  width: 98%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+}
+.contacts__txtbs textarea {
+  height: 10rem;
+  margin-bottom: 3rem;
+}
+.contacts__txtbs input::-moz-placeholder, .contacts__txtbs textarea::-moz-placeholder {
+  font-family: "Patrick Hand", cursive;
+  color: #fff;
+}
+.contacts__txtbs input::placeholder, .contacts__txtbs textarea::placeholder {
+  font-family: "Patrick Hand", cursive;
+  color: #fff;
+}
+.contacts__txtbs input:focus, .contacts__txtbs textarea:focus,
+.contacts__txtbs input:enabled,
+.contacts__txtbs textarea:enabled {
+  color: #fff;
+}
+.contacts__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ourBlog__wrapper {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  place-content: center;
+}
+.ourBlog__card {
+  padding: 2rem 1rem;
+}
+.ourBlog__card img {
+  display: flex;
+  height: 25%;
+  width: 30%;
+  border-radius: 5rem;
+  border: none;
+  padding: 2rem;
+}
+.ourBlog__card--details p {
   color: #dd1d01;
 }
 

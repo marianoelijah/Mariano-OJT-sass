@@ -1,0 +1,84 @@
+@use "../abstract" as *;
+@use "../base/" as *;
+
+.contacts {
+  &__wrapper {
+ 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    height: 150vh;
+  }
+  .title {
+    margin:2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 2rem 1rem;
+    icon{
+        color: $clr--secondary;
+        margin-bottom: 1rem;
+    }
+    
+  }
+
+  &__map {
+    margin: 2rem;
+    iframe {
+      border-radius: 2rem;
+    }
+  }
+
+  &__txtbs {
+    padding: 5rem;
+    width: 70rem;
+    height: 50rem;
+    ul {
+      flex-direction: column;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+    form {
+      padding: 2rem;
+      .contacts__name {
+        display: flex;
+        justify-content: space-around;
+        ul {
+          width: 100%;
+        }
+      }
+      small {
+        display: flex;
+      }
+    }
+    input {
+      width: 98%;
+      margin: 0.5rem;
+      padding: 0.5rem;
+      background-color: transparent;
+      border: 1px solid $clr--light;
+      border-radius: 0.5rem;
+    }
+    textarea {
+      @extend input;
+      height: 10rem;
+      margin-bottom: 3rem;
+    }
+    input::placeholder {
+      font-family: $font--primary;
+      color: $clr--light;
+    }
+    input:focus,
+    input:enabled {
+      color: $clr--light;
+    }
+  }
+
+  &__name {
+    @include between;
+  }
+}
